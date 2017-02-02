@@ -1,6 +1,6 @@
 {
   "name": "text-summary",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "You can make a regular summary of given text or summarize specific part of the text based on asked question",
   "main": "app/index.js",
   "scripts": {
