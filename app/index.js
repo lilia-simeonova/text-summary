@@ -2,6 +2,7 @@
 
 var jaccard = require('jaccard-similarity-sentences');
 
+
 var getSentencesFromArticle = require('get-sentences-from-article');
 
 exports.summaryWithQuestion = function(question, text, numberSentences) {
@@ -21,7 +22,7 @@ exports.summaryWithQuestion = function(question, text, numberSentences) {
 
 			var result = '';
 			for(var i = 0; i < numberSentences; i++) {
-				result = result + sortedArray[i]['sentence'];
+				result = result + sortedArray[i]['sentence'] + ' ';
 			}
 			return result;
 		} else {
@@ -46,7 +47,7 @@ exports.summary = function(text, numberSentences) {
 
 			var result = '';
 			for(var i = 0; i < numberSentences; i++) {
-				result = result + sortedArray[i]['sentence'];
+				result = result + sortedArray[i]['sentence'] + ' ';
 			}
 			return result;
 	} else {
