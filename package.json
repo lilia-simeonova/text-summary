@@ -1,0 +1,33 @@
+{
+  "name": "text-summary",
+  "version": "1.0.1",
+  "description": "You can make a regular summary of given text or summarize specific part of the text based on asked question",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec",
+    "start": "node ./app/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lilia-simeonova/text-summary/"
+  },
+  "keywords": [
+    "summary",
+    "summarization",
+    "text"
+  ],
+  "author": "Lilia Simeonova",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lilia-simeonova/text-summary/issues"
+  },
+  "homepage": "https://github.com/lilia-simeonova/text-summary#readme",
+  "dependencies": {
+    "jaccard-similarity-sentences": "^1.0.0",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "natural": "^0.4.0",
+    "get-sentences-from-article": "^3.8.6"
+  },
+  "devDependencies": {}
+}
