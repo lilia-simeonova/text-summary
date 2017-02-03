@@ -1,3 +1,7 @@
+# <Demo>    
+
+Check out the DEMO of [summarize.world](http://summarize.world)
+
 # Summarizing text
 
 This module provides an API for making summary of text.
