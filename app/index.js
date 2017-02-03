@@ -5,7 +5,7 @@ var jaccard = require('jaccard-similarity-sentences');
 
 var getSentencesFromArticle = require('get-sentences-from-article');
 
-exports.summaryWithQuestions = function(question, text, numberSentences) {
+exports.summaryWithQuestion = function(question, text, numberSentences) {
   var weigthedSentences = new Array();
   var sentences = getSentencesFromArticle(text);
   if (sentences) {
@@ -62,9 +62,3 @@ exports.summary = function(text, numberSentences) {
     return []
   }
 }
-
-var fs = require('fs');
-
-var text = fs.readFileSync('../test/news.txt', 'utf8').toString();
-
-console.log(exports.summaryWithQuestions('when trump became presidential?',text, 3));
